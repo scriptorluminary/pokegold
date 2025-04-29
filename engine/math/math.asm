@@ -3,6 +3,7 @@ _Multiply::
 	ld a, 8
 	ld b, a
 
+	; Functions load in.
 	xor a
 	ldh [hMultiplicand - 1], a
 	ldh [hMathBuffer + 1], a
