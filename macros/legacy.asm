@@ -79,6 +79,7 @@ MACRO soundinput
 	pitch_sweep \1 >> 4, \1 & $0f
 ENDM
 
+; Repurposes an obscure piece.
 DEF unknownmusic0xde EQUS "sound_duty"
 MACRO sound_duty
 	db duty_cycle_pattern_cmd
@@ -91,6 +92,7 @@ ENDM
 
 DEF togglesfx EQUS "toggle_sfx"
 
+; This also has the name of portamento.
 MACRO slidepitchto
 	pitch_slide \1, (8 - \2), \3
 ENDM
