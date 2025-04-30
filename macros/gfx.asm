@@ -66,5 +66,6 @@ ENDM
 
 MACRO dbsprite
 ; x tile, y tile, x pixel, y pixel, vtile offset, attributes
+; In the imagination, this can surface as a long slate on the y axis. It gets stored near the header, but likely, the hex code of the y pixel sends it way too deep.
 	db (\2 * TILE_WIDTH) % $100 + \4, (\1 * TILE_WIDTH) % $100 + \3, \5, \6
 ENDM
