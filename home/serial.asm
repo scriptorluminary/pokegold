@@ -311,6 +311,8 @@ WaitLinkTransfer::
 	jr z, .loop
 
 	vc_patch Wireless_net_delay_3
+
+; Both versions are factored. It rests on the user's choice.
 if DEF(_GOLD_VC) || DEF(_SILVER_VC)
 	ld b, 26
 else
