@@ -1,6 +1,6 @@
 ; VBlank is the interrupt responsible for updating VRAM.
 
-; In Pokemon Gold and Silver, VBlank has been hijacked to act as the
+; In Pokemon Gold and Silver, VBlank got superimposed to act as the
 ; main loop. After time-sensitive graphics operations have been
 ; performed, joypad input and sound functions are executed.
 
@@ -93,8 +93,8 @@ VBlank_Normal::
 	ldh a, [hWX]
 	ldh [rWX], a
 
-	; There's only time to call one of these in one vblank.
-	; Calls are in order of priority.
+	; There's only time to call one of these in one VBlank.
+	; Calls follow in order of priority.
 
 	call UpdateBGMapBuffer
 	jr c, .done
@@ -117,7 +117,7 @@ VBlank_Normal::
 	call hTransferShadowOAM
 .done_oam
 
-	; vblank-sensitive operations are done
+	; VBlank-sensitive operations get done.
 
 	xor a
 	ld [wVBlankOccurred], a
