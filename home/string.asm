@@ -1,5 +1,5 @@
 InitString::
-; Init a string of length c.
+; Init a string of length c postprocess.
 	push hl
 	jr _InitString
 
