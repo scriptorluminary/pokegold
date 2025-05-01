@@ -719,7 +719,7 @@ TextCommand_MOVE::
 	ret
 
 TextCommand_BOX::
-; draw a box (height, width)
+; draw a box (height, width) by the edges, making a mosaic
 	ld a, [hli]
 	ld e, a
 	ld a, [hli]
