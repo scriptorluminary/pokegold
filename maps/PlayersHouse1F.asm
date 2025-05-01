@@ -105,7 +105,7 @@ MomScript:
 	end
 
 .FirstTimeBanking:
-	writetext ImBehindYouText
+	writetext DoItText
 	waitbutton
 	closetext
 	end
@@ -248,7 +248,7 @@ SoWhatWasProfElmsErrandText:
 	cont "rely on you."
 	done
 
-ImBehindYouText:
+DoItText:
 	text "<PLAYER>, do it!"
 
 	para "I'm behind you all"
