@@ -1,4 +1,6 @@
 ; Audio interfaces.
+; The music executes sequentially, as if compiled beforehand, in its startups.
+; Then, the bank sees specification for preloading. Think of nested files.
 
 InitSound::
 	push hl
