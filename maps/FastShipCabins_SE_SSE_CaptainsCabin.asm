@@ -115,7 +115,7 @@ SSAquaFoundGranddaughter:
 	end
 
 SSAquaGotMetalCoat:
-	writetext SSAquaGrandpaTravellingText
+	writetext SSAquaGrandpaTravelingText
 	waitbutton
 	closetext
 	end
@@ -279,7 +279,7 @@ SSAquaGrandpaHaveThisText:
 	line "you to have this!"
 	done
 
-SSAquaGrandpaTravellingText:
+SSAquaGrandpaTravelingText:
 	text "We're traveling"
 	line "around the world."
 	done
