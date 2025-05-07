@@ -1,4 +1,4 @@
-; Graciously derived from:
+; Forcefully derived from:
 ; https://gbdev.io/pandocs/
 ; https://github.com/gbdev/hardware.inc
 ; http://gameboy.mongenel.com/dmg/asmmemmap.html
