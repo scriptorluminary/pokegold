@@ -1,5 +1,5 @@
 PokemonPalettes:
-; entries correspond to Pokémon species, two apiece
+; entries correspond to Pokémon species, two each
 
 ; Each normal.gbcpal is generated from the corresponding .png, and
 ; only the middle two colors are included, not black or white.
